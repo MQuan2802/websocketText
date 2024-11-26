@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7c4bd0b-84b5-47fc-bf3b-ca0d19164624" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ChatService/S3Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/AuthenticatorDomain/Config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/AuthenticatorDomain/Filter/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/AuthenticatorDomain/Filter/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ChatApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/ChatMessageSpecs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Controller/ChatMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Controller/ParticipantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/ConversationSpecs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/ChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/ChatMessage_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/Conversation_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/Participant_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Repository/ChatMessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Request/ConversationUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Request/FetchConversationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Request/FetchMessageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Service/ChatMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/FileExchangeDomain/Service/S3Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Dto/ClientMessageSessionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Dto/SocketMessageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Handler/SocketVideoHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/SMS/SMSService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeSchedulerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Controller/FriendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/DTO/FriendDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/BaseEntity_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/FriendShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/FriendShipSpecs_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/FriendShip_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/SpecificationsBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/UserSpecs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/User_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Repository/FriendShipRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Request/FetchFriendRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Request/FetchUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Request/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Request/SignUpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Response/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Service/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Service/FriendShipService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/AuthenticatorDomain/Config/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/AuthenticatorDomain/Filter/JwtAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/AuthenticatorDomain/Filter/JwtTokenProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ChatApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/ChatMessageSpecs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Controller/ChatMessageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Controller/ConversationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/ConversationSpecs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Dto/ConversationDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Dto/MessageDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/ChatMessage$ChatMessageBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/ChatMessage$ContentType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/ChatMessage$ToDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/ChatMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/ChatMessage_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/Conversation$State.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/Conversation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/Conversation_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/Participant$ToDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/Participant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Entity/Participant_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Repository/ChatMessageRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Repository/ConversationRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Repository/ParticipantRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Request/ConversationCreateRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Request/FetchConversationRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Request/FetchMessageRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Service/ChatMessageService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Service/ConversationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/ConversationDomain/Service/ParticipantService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/FileExchangeDomain/Service/S3Service$FileType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/FileExchangeDomain/Service/S3Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/FirstController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/InitBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MailService$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Dto/ClientMessageSessionDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Dto/SocketMessageDto$SocketMessageDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Dto/SocketMessageDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Handler/SocketDocumentHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Handler/SocketImageHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Handler/SocketTextHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Handler/SocketTextHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Handler/SocketVideoHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/Request/TextMessageRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/SMS/SMSService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeDomain/WebSocketConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/MessageExchangeSchedulerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Controller/FriendController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/DTO/FriendDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/BaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/BaseEntity_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/FriendShip$FriendShipBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/FriendShip$Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/FriendShip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/FriendShipSpecs_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/FriendShip_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/SpecificationsBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/User$ToDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/UserSpecs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Entity/User_.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Repository/FriendShipRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Request/FetchFriendRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Request/FetchUserRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Request/LoginRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Request/SignUpRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Response/LoginResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Service/CustomUserDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Service/FriendShipService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/ChatApp/UserDomain/Service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/classes/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_h2database_h2_1_4_197.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__jakarta_mail_jakarta_mail_api_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__javax_validation_validation_api_2_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_14_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_34.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_34.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_34.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_12_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_aop_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_beans_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_context_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_core_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_expression_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_orm_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_tx_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_web_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/DockerFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/ChatApp/SSO/MessageExchangeScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/ChatApp/SSO/Request/SignUpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/ChatApp/SSO/User/Entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSO/src/main/java/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Controller/ConversationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Controller/ConversationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Dto/ConversationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Dto/ConversationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Dto/MessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Dto/MessageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/Conversation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/Conversation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Entity/Participant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Repository/ConversationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Repository/ConversationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Repository/ParticipantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Repository/ParticipantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Request/ConversationCreateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Request/ConversationCreateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Service/ConversationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Service/ConversationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Service/ParticipantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/ConversationDomain/Service/ParticipantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/Domain/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/FirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/FirstController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/InitBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/InitBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Handler/SocketDocumentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Handler/SocketDocumentHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Handler/SocketImageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Handler/SocketImageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Handler/SocketTextHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/MessageExchangeDomain/Handler/SocketTextHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/ChatUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Entity/Friend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Repository/ChatUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/java/ChatApp/UserDomain/Service/ChatUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/ChatUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/LodaRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/jwt/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/jwt/JwtTokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/payload/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/payload/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/payload/RandomStuff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/user/CustomUserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/user/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-hibernate-jwt/src/main/java/me/loda/springsecurityhibernatejwt/user/UserService.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReadMe.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Client/TextWebSocketClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1170">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1911#1912#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Client/ApiClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Client/ImageWebSocketClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="78" column="130" selection-start-line="78" selection-start-column="130" selection-end-line="78" selection-end-column="130" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar!/javax/websocket/WebSocketContainer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ImageWebSocketClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="80" column="50" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Client/DocumentWebSocketClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-61">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TextWebSocketClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="19" selection-start-line="15" selection-start-column="7" selection-end-line="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3540">
+              <caret line="261" column="22" selection-start-line="261" selection-start-column="22" selection-end-line="261" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>1.5</find>
+      <find>javax.websocket-api</find>
+      <find>man</find>
+      <find>Hello, WebSocket!</find>
+      <find>15000</find>
+      <find>connect</find>
+      <find>Hello</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/Producer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Producer/ProducerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClientWebSocket/ImageWebSocketClient.java" />
+        <option value="$PROJECT_DIR$/ImageWebSocketClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Client/ApiClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Client/DocumentWebSocketClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Client/TextWebSocketClient.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ReadMe.md" />
+        <option value="$PROJECT_DIR$/src/main/java/Client/ImageWebSocketClient.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.websocket:javax.websocket-api:1.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.websocket:javax.websocket-api:1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.websocket-api-1.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProducerService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.websocket:javax.websocket-api:1.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.websocket-api-1.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Producer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7c4bd0b-84b5-47fc-bf3b-ca0d19164624" name="Default Changelist" comment="" />
+      <created>1710578793180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710578793180</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27896994" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31325302" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="UML Generator" order="8" />
+      <window_info anchor="right" id="PlantUML" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27539343" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5048193" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="UML Generator" order="8" />
+      <window_info anchor="right" id="PlantUML" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Producer/ProducerService.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/tyrus/bundles/tyrus-standalone-client/1.9/tyrus-standalone-client-1.9.jar!/org/glassfish/grizzly/filterchain/DefaultFilterChain.class" />
+    <entry file="file://$PROJECT_DIR$/producerService.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar!/javax/websocket/Encoder.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar!/javax/websocket/ContainerProvider.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar!/javax/websocket/RemoteEndpoint.class" />
+    <entry file="file://$PROJECT_DIR$/ImageWebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="80" column="50" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3540">
+          <caret line="261" column="22" selection-start-line="261" selection-start-column="22" selection-end-line="261" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Client/DocumentWebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar!/javax/websocket/WebSocketContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextWebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="19" selection-start-line="15" selection-start-column="7" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Client/ApiClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Client/ImageWebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="78" column="130" selection-start-line="78" selection-start-column="130" selection-end-line="78" selection-end-column="130" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Client/TextWebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1170">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
